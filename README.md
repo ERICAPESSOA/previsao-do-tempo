@@ -9,10 +9,9 @@ Feito para praticar JavaScript e o consumo de APIs.
 - Buscar o clima de qualquer cidade.
 - Exibir temperatura, condições climáticas e outros dados em tempo real.
 - Interface limpa e responsiva.
-  
-#### Imagem:
-  
-![Previsão do tempo](https://github.com/user-attachments/assets/0a477ddd-1983-47cb-808f-48c489a41e99)
+
+  Preview
+  <img width="1366" height="608" alt="Previsão do Tempo - Google Chrome 14_08_2025 23_34_15" src="https://github.com/user-attachments/assets/76fcdd48-8ae1-46bb-a356-7e8aa222cf36" />
 
 🛠️ Tecnologias Utilizadas
 - HTML5  

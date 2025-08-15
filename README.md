@@ -10,7 +10,7 @@ Feito para praticar JavaScript e o consumo de APIs.
 - Exibir temperatura, condições climáticas e outros dados em tempo real.
 - Interface limpa e responsiva.
 
-  Preview
+ 📸 Preview:
   <img width="1366" height="608" alt="Previsão do Tempo - Google Chrome 14_08_2025 23_34_15" src="https://github.com/user-attachments/assets/76fcdd48-8ae1-46bb-a356-7e8aa222cf36" />
 
 🛠️ Tecnologias Utilizadas

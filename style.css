@@ -5,23 +5,66 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html,
 body {
-    background-image: url(https://wallpapercrafter.com/desktop1/630452-canada-lake-louise-moraine-lake-road-moraine-lake.jpg);
+    height: 100%;
+}
+
+body {
+    background-image: url(/img/Canadian-landscape-riparian-mountain_1600x900.jpg);
     background-size: cover;
-    height: 100vh; 
-    width: 100vw;   
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
-.caixa-maior {
-    background-color: #000000;
-    opacity: 0.8; 
-    width: 95%;  
-    max-width: 450px; 
+.app-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.weather-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: min(95%, 450px);
     border-radius: 25px;
-    padding: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.search-form {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-cidade {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.75rem 1rem;
+    background-color: rgba(124, 124, 124, 0.17);
+    color: #ffffff;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.btn-buscar {
+    border: none;
+    padding: 0.75rem;
+    background-color: rgba(124, 124, 124, 0.17);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.btn-buscar:hover {
+    background-color: #7c7c7c;
 }
 
 .lupa {
@@ -29,46 +72,38 @@ body {
     width: 20px;
 }
 
-button {
-    border: none;
-    padding: 10px;
-    background-color: #7c7c7c2b;
-    cursor: pointer;
-    border-radius: 50%;
-    float: right;
-}
-
-button:hover {
-    background-color: #7c7c7c;
-}
-
-input {
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #7c7c7c2b;
-    color: #ffffff;
-    width: calc(100% - 100px);
-    font-size: 24px;
-}
-
-.caixa-media {
-    margin-top: 30px;
+.weather-info {
+    margin-top: 1.5rem;
 }
 
 .cidade {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
 }
 
-.temp {
+.temp,
+.umidade,
+.mensaje {
     color: #ffffff;
-    margin-top: 30px;
-    font-size: 30px;
+    margin-top: 0.75rem;
+    font-size: 1.5rem;
 }
 
-.umidade {
-    color: #ffffff;
-    margin-top: 30px;
+.mensaje {
+    min-height: 1.6rem;
+    font-size: 0.95rem;
+    color: #ffddaa;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }

@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -9,22 +9,26 @@
 </head>
 
 <body>
-    <div class="caixa-maior">
+    <main class="app-container">
+        <section class="weather-card" aria-label="Previsão do tempo">
+            <form class="search-form" id="weather-form">
+                <label for="cidade" class="visually-hidden">Digite a cidade</label>
+                <input id="cidade" class="input-cidade" type="text" placeholder="Digite a cidade, ex.: Rio de Janeiro" />
+                <button type="submit" class="btn-buscar" aria-label="Buscar clima">
+                    <img class="lupa" src="https://www.svgrepo.com/show/390590/find-glass-minus-online-search-seo.svg" alt="Ícone de busca" />
+                </button>
+            </form>
 
-        <input class="input-cidade" placeholder="Digite a cidade">
+            <article class="weather-info">
+                <h1 class="cidade">Tempo em ...</h1>
+                <p class="temp">Temperatura: --</p>
+                <p class="umidade">Umidade: --</p>
+                <p class="mensaje"></p>
+            </article>
+        </section>
+    </main>
 
-        <button onclick="cliqueiNoBotao()">
-            <img class="lupa" src="https://www.svgrepo.com/show/390590/find-glass-minus-online-search-seo.svg">
-        </button>
-
-        <div class="caixa-media">
-            <h2 class="cidade">Tempo em Rio de janeiro</h2>
-
-            <p class="temp">27°C</p>    
-
-        </div>
-    </div>
+    <script src="javascript.js"></script>
 </body>
-<script src="javascript.js"></script>
 
 </html>
